@@ -1,0 +1,1580 @@
+{
+    "Single Landlord / Single Site / seperate Bill / GST Not Applicable / TDS Not Applicable": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / GST Not Applicable / TDS Not Applicable",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "seperate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1001",
+            "mediaName": "Anna Salai Hoarding",
+            "mediaType": "Hoarding",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Anna Salai, near Spencer Plaza",
+            "fullAddress": "Anna Salai, near Spencer Plaza, Chennai - 600002",
+            "width": 20,
+            "height": 10,
+            "totalSqFt": 200,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 40000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "",
+                "netPayableAmount": 40000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 80000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "R. Kumaresan",
+                    "phone": "9840012345",
+                    "bankName": "HDFC Bank",
+                    "ifsc": "HDFC0000123",
+                    "accountNumber": "50100123456789",
+                    "panNumber": "ABCPK1234E",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 40000,
+                    "onlineAmount": 40000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1001/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1001/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / GST Not Applicable / TDS Not Applicable": {
+        "scenario": "Single Landlord / Single Site / Single Bill / GST Not Applicable / TDS Not Applicable",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1001",
+            "mediaName": "Anna Salai Hoarding",
+            "mediaType": "Hoarding",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Anna Salai, near Spencer Plaza",
+            "fullAddress": "Anna Salai, near Spencer Plaza, Chennai - 600002",
+            "width": 20,
+            "height": 10,
+            "totalSqFt": 200,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 40000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "",
+                "netPayableAmount": 40000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 80000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "R. Kumaresan",
+                    "phone": "9840012345",
+                    "bankName": "HDFC Bank",
+                    "ifsc": "HDFC0000123",
+                    "accountNumber": "50100123456789",
+                    "panNumber": "ABCPK1234E",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 40000,
+                    "onlineAmount": 40000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1001/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1001/photo2.jpg"
+            ]
+        }
+    },
+     "Single Landlord / Single Site / seperate Bill / GST Applicable / GST Hold": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / GST Applicable / GST Hold",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "seperate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1002",
+            "mediaName": "OMR Unipole",
+            "mediaType": "Unipole",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "OMR, Sholinganallur",
+            "fullAddress": "OMR Road, Sholinganallur, Chennai - 600119",
+            "width": 40,
+            "height": 20,
+            "totalSqFt": 800,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 100000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "https://adinn-space.sgp1.cdn.digitaloceanspaces.com/Rental-OOH/invoice/1789559358930-Site_Ledger_-_ledger_flow_20260818.pdf",
+                "netPayableAmount": 118000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-04-01",
+                "endDate": "2028-03-31",
+                "reminderBeforeExpiry": 45,
+                "advanceRent": 200000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "S. Bhuvaneshwari",
+                    "phone": "9884411223",
+                    "bankName": "ICICI Bank",
+                    "ifsc": "ICIC0001234",
+                    "accountNumber": "004501987654",
+                    "panNumber": "BXYPB5678K",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 118000,
+                    "onlineAmount": 118000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 10000,
+                    "gstHold": 1,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 18000,
+                    "gstNumber": "33ABCDE1234F1Z5"
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1002/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1002/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / GST Applicable / GST Hold": {
+        "scenario": "Single Landlord / Single Site / Single Bill / GST Applicable / GST Hold",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1002",
+            "mediaName": "OMR Unipole",
+            "mediaType": "Unipole",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "OMR, Sholinganallur",
+            "fullAddress": "OMR Road, Sholinganallur, Chennai - 600119",
+            "width": 40,
+            "height": 20,
+            "totalSqFt": 800,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 100000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "https://adinn-space.sgp1.cdn.digitaloceanspaces.com/Rental-OOH/invoice/1789559358930-Site_Ledger_-_ledger_flow_20260818.pdf",
+                "netPayableAmount": 118000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-04-01",
+                "endDate": "2028-03-31",
+                "reminderBeforeExpiry": 45,
+                "advanceRent": 200000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "S. Bhuvaneshwari",
+                    "phone": "9884411223",
+                    "bankName": "ICICI Bank",
+                    "ifsc": "ICIC0001234",
+                    "accountNumber": "004501987654",
+                    "panNumber": "BXYPB5678K",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 118000,
+                    "onlineAmount": 118000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 10000,
+                    "gstHold": 1,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 18000,
+                    "gstNumber": "33ABCDE1234F1Z5"
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1002/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1002/photo2.jpg"
+            ]
+        }
+    },
+     "Single Landlord / Single Site / seperate Bill / GST Applicable / TDS Applicable": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / GST Applicable / TDS Applicable",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "seperate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1003",
+            "mediaName": "ECR Gantry",
+            "mediaType": "Gantry",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "ECR, Kelambakkam",
+            "fullAddress": "East Coast Road, Kelambakkam, Chennai - 603103",
+            "width": 60,
+            "height": 15,
+            "totalSqFt": 900,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 60000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "https://cdn.adinndigital.com/invoices/med-1003/gst-invoice.pdf",
+                "netPayableAmount": 70800,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2024-06-01",
+                "endDate": "2027-05-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 120000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "M. Rajendran",
+                    "phone": "9789922334",
+                    "bankName": "SBI",
+                    "ifsc": "SBIN0004321",
+                    "accountNumber": "31245678901",
+                    "panNumber": "CXYPR9012L",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 70800,
+                    "onlineAmount": 70800,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 6000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 10800,
+                    "gstNumber": "33FGHIJ5678K1Z2"
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1003/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1003/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / GST Applicable / TDS Applicable": {
+        "scenario": "Single Landlord / Single Site / Single Bill / GST Applicable / TDS Applicable",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1003",
+            "mediaName": "ECR Gantry",
+            "mediaType": "Gantry",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "ECR, Kelambakkam",
+            "fullAddress": "East Coast Road, Kelambakkam, Chennai - 603103",
+            "width": 60,
+            "height": 15,
+            "totalSqFt": 900,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 60000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstPercentage": 18,
+                "gstInvoiceUrl": "https://cdn.adinndigital.com/invoices/med-1003/gst-invoice.pdf",
+                "netPayableAmount": 70800,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2024-06-01",
+                "endDate": "2027-05-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 120000,
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "M. Rajendran",
+                    "phone": "9789922334",
+                    "bankName": "SBI",
+                    "ifsc": "SBIN0004321",
+                    "accountNumber": "31245678901",
+                    "panNumber": "CXYPR9012L",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 70800,
+                    "onlineAmount": 70800,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 6000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 10800,
+                    "gstNumber": "33FGHIJ5678K1Z2"
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1003/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1003/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / Appraisal Applicable - Fixed Amount": {
+        "scenario": "Single Landlord / Single Site / Single Bill / Appraisal Applicable - Fixed Amount",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1004",
+            "mediaName": "GST Road Billboard",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "GST Road, Tambaram",
+            "fullAddress": "GST Road, Tambaram, Chennai - 600045",
+            "width": 30,
+            "height": 15,
+            "totalSqFt": 450,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 35000,
+                "gstApplicable": 0,
+                "netPayableAmount": 35000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-02-01",
+                "endDate": "2027-01-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 70000,
+                "status": 3
+            },
+            "appraisal": {
+                "applicable": 1,
+                "type": 2,
+                "fixedAmount": 5000,
+                "appraisalAmount": 5000,
+                "frequency": 2,
+                "lastAppraisalDate": "2025-01-01",
+                "nextAppraisalDate": "2027-01-01",
+                "includedInCurrentRent": 0
+            },
+            "landOwners": [
+                {
+                    "name": "K. Elumalai",
+                    "phone": "9600112233",
+                    "bankName": "Canara Bank",
+                    "ifsc": "CNRB0001122",
+                    "accountNumber": "1122334455",
+                    "panNumber": "DXYPE3456M",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 40000,
+                    "onlineAmount": 40000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1004/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1004/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / seperate Bill / Appraisal Applicable - Fixed Amount": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / Appraisal Applicable - Fixed Amount",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "seperate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1004",
+            "mediaName": "GST Road Billboard",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "GST Road, Tambaram",
+            "fullAddress": "GST Road, Tambaram, Chennai - 600045",
+            "width": 30,
+            "height": 15,
+            "totalSqFt": 450,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 35000,
+                "gstApplicable": 0,
+                "netPayableAmount": 35000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-02-01",
+                "endDate": "2027-01-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 70000,
+                "status": 3
+            },
+            "appraisal": {
+                "applicable": 1,
+                "type": 2,
+                "fixedAmount": 5000,
+                "appraisalAmount": 5000,
+                "frequency": 2,
+                "lastAppraisalDate": "2025-01-01",
+                "nextAppraisalDate": "2027-01-01",
+                "includedInCurrentRent": 0
+            },
+            "landOwners": [
+                {
+                    "name": "K. Elumalai",
+                    "phone": "9600112233",
+                    "bankName": "Canara Bank",
+                    "ifsc": "CNRB0001122",
+                    "accountNumber": "1122334455",
+                    "panNumber": "DXYPE3456M",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 40000,
+                    "onlineAmount": 40000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1004/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1004/photo2.jpg"
+            ]
+        }
+    },
+
+
+
+
+    "Single Landlord / Single Site / Single Bill / Appraisal Applicable - Percentage - Already Included In Current Rent": {
+        "scenario": "Single Landlord / Single Site / Single Bill / Appraisal Applicable - Percentage - Already Included In Current Rent",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1005",
+            "mediaName": "Porur Bypass Billboard",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Porur Bypass",
+            "fullAddress": "Porur Bypass, Chennai - 600116",
+            "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 44000,
+                "gstApplicable": 0,
+                "netPayableAmount": 44000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2023-01-01",
+                "endDate": "2026-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 88000,
+                "status": 3
+            },
+            "appraisal": {
+                "applicable": 1,
+                "type": 1,
+                "percentage": 10,
+                "appraisalAmount": 4000,
+                "frequency": 2,
+                "lastAppraisalDate": "2026-01-01",
+                "nextAppraisalDate": "2028-01-01",
+                "includedInCurrentRent": 1
+            },
+            "landOwners": [
+                {
+                    "name": "P. Vasanthakumar",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 2,
+                    "onlineMode": 2,
+                    "shareAmount": 44000,
+                    "onlineAmount": 44000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsAmount": 0,
+                    "tdsApplicable": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1005/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1005/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / seperate Bill / Appraisal Applicable - Percentage - Already Included In Current Rent": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / Appraisal Applicable - Percentage - Already Included In Current Rent",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "seperate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-1005",
+            "mediaName": "Porur Bypass Billboard",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Porur Bypass",
+            "fullAddress": "Porur Bypass, Chennai - 600116",
+            "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 44000,
+                "gstApplicable": 0,
+                "netPayableAmount": 44000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2023-01-01",
+                "endDate": "2026-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 88000,
+                "status": 3
+            },
+            "appraisal": {
+                "applicable": 1,
+                "type": 1,
+                "percentage": 10,
+                "appraisalAmount": 4000,
+                "frequency": 2,
+                "lastAppraisalDate": "2026-01-01",
+                "nextAppraisalDate": "2028-01-01",
+                "includedInCurrentRent": 1
+            },
+            "landOwners": [
+                {
+                    "name": "P. Vasanthakumar",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 2,
+                    "onlineMode": 2,
+                    "shareAmount": 44000,
+                    "onlineAmount": 44000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsAmount": 0,
+                    "tdsApplicable": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1005/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1005/photo2.jpg"
+            ]
+        }
+    },
+    "Multiple Landlords / Single Sites / Single Bills / separate_agreement": {
+        "scenario": "Multiple Landlords / Single Sites / Single Bills / Separate Bills",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "separate_bill",
+            "agreementType": "separate_agreement",
+            "landOwners": [
+                {
+                    "name": "C. Dhanasekaran",
+                    "phone": "9833344455",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "123456789012",
+                    "panNumber": "IXYPD7788S",
+                    "paymentCategory": 1,
+                    "onlineMode": 0,
+                    "shareAmount": 20000,
+                    "onlineAmount": 0,
+                    "cashAmount": 20000,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                },
+                {
+                    "name": "D. Kalaivani",
+                    "phone": "9844455566",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "223456789013",
+                    "panNumber": "JXYPK8899T",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 30000,
+                    "onlineAmount": 30000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 3000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 9000,
+                    "gstNumber": "15845"
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-3001",
+                    "mediaName": "Perungudi Site",
+                    "location": "Perungudi, Chennai",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "gstApplicable": 0,
+                        "netPayableAmount": 59000,
+                        "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-3001/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-3001/photo2.jpg"
+                    ]
+                }
+            ],
+            "agreement": {
+                "startDate": "2027-06-01",
+                "endDate": "2028-05-31",
+                "advanceRent": 200000,
+                "status": 3
+            }
+        }
+    },
+     "Multiple Landlords / Single Sites / seperate Bills / separate_agreement": {
+        "scenario": "Multiple Landlords / Single Sites / seperate Bills / Separate Bills",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "separate_bill",
+            "agreementType": "separate_agreement",
+            "landOwners": [
+                {
+                    "name": "C. Dhanasekaran",
+                    "phone": "9833344455",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "123456789012",
+                    "panNumber": "IXYPD7788S",
+                    "paymentCategory": 1,
+                    "onlineMode": 0,
+                    "shareAmount": 20000,
+                    "onlineAmount": 0,
+                    "cashAmount": 20000,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                },
+                {
+                    "name": "D. Kalaivani",
+                    "phone": "9844455566",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "223456789013",
+                    "panNumber": "JXYPK8899T",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 30000,
+                    "onlineAmount": 30000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 3000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 9000,
+                    "gstNumber": "15845"
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-3001",
+                    "mediaName": "Perungudi Site",
+                    "location": "Perungudi, Chennai",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "gstApplicable": 0,
+                        "netPayableAmount": 59000,
+                        "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-3001/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-3001/photo2.jpg"
+                    ]
+                }
+            ],
+            "agreement": {
+                "startDate": "2027-06-01",
+                "endDate": "2028-05-31",
+                "advanceRent": 200000,
+                "status": 3
+            }
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / Payment Mode Cash Only": {
+        "scenario": "Single Landlord / Single Site / Single Bill / Payment Mode Cash Only",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "mediaCode": "MED-4001",
+            "mediaName": "Cash Only Site",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Porur Bypass",
+            "fullAddress": "Porur Bypass, Chennai - 600116",
+            "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "numberOfLandOwners": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 20000,
+                "gstApplicable": 0,
+                "netPayableAmount": 20000,
+                 "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-01-01",
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+               {
+                    "name": "P. Vasanthakumar",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 2,
+                    "onlineMode": 2,
+                    "shareAmount": 20000,
+                    "onlineAmount": 20000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-4001/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-4001/photo2.jpg"
+            ]
+        }
+    },
+      "Single Landlord / Single Site / seperate Bill / Payment Mode Cash Only": {
+        "scenario": "Single Landlord / Single Site / seperate Bill / Payment Mode Cash Only",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+                   "billingType": "separate_bill",
+            "agreementType": "separate_agreement",
+            "mediaCode": "MED-4001",
+            "mediaName": "Cash Only Site",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Porur Bypass",
+            "fullAddress": "Porur Bypass, Chennai - 600116",
+            "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "numberOfLandOwners": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 20000,
+                "gstApplicable": 0,
+                "netPayableAmount": 20000,
+                 "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-01-01",
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "P. Vasanthakumar",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 2,
+                    "onlineMode": 2,
+                    "shareAmount": 20000,
+                    "onlineAmount": 20000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-4001/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-4001/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Single Site / Single Bill / Payment Mode Cash Plus Online": {
+        "scenario": "Single Landlord / Single Site / Single Bill / Payment Mode Cash Plus Online",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "mediaCode": "MED-4002",
+            "mediaName": "Cash Plus Online Site",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "Porur Bypass",
+            "fullAddress": "Porur Bypass, Chennai - 600116",
+            "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "numberOfLandOwners": 1,
+             "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 55000,
+                "gstApplicable": 0,
+                "netPayableAmount": 55000,
+                   "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-01-01",
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "F. Selvi",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 3,
+                    "onlineMode": 2,
+                    "shareAmount": 55000,
+                    "onlineAmount": 30000,
+                    "cashAmount": 25000,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+                 
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-4002/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-4002/photo2.jpg"
+            ]
+        }
+    },
+    "Single Landlord / Landowner GST Applicable / Net Payable 59k": {
+        "scenario": "Single Landlord / Single Site / Single Bill / Landowner GST Applicable / Net Payable 59k",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "mediaCode": "MED-1088",
+            "mediaName": "OMR Billboard",
+            "mediaType": "Billboard",
+            "state": "Tamil Nadu",
+            "city": "Chennai",
+            "location": "OMR",
+             "width": 40,
+            "height": 10,
+            "totalSqFt": 400,
+            "fullAddress": "OMR, Chennai - 600097",
+            "numberOfLandOwners": 1,
+            "status": 1,
+            "rentalPayment": {
+                "totalRentalAmount": 50000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "gstInvoiceUrl": "https://cdn.adinndigital.com/invoices/med-1088/gst-invoice.pdf",
+                "netPayableAmount": 59000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2027-12-31",
+                "status": 3
+            },
+            "appraisal": [],
+            "landOwners": [
+                {
+                    "name": "R. Kumaresan",
+                    "phone": "9840012345",
+                    "bankName": "HDFC Bank",
+                    "ifsc": "HDFC0000123",
+                    "accountNumber": "50100123456789",
+                    "panNumber": "ABCPK1234E",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 50000,
+                    "onlineAmount": 50000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 5000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 9000,
+                    "gstNumber": "33ABCDE1234F1Z5"
+                }
+            ],
+            "proof_of_campaign": [
+                "https://cdn.adinndigital.com/proof/med-1088/photo1.jpg",
+                "https://cdn.adinndigital.com/proof/med-1088/photo2.jpg"
+            ]
+        }
+    },
+
+
+    "Single Landlord / Multiple Sites / Single Bill / Single Agreement": {
+        "scenario": "Single Landlord / Multiple Sites / Single Bill / Single Agreement",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "single_agreement",
+            "rentalPayment": {
+                "totalRentalAmount": 100000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+               "gstInvoiceUrl": "https://adinn-space.sgp1.cdn.digitaloceanspaces.com/Rental-OOH/invoice/1789559358930-Site_Ledger_-_ledger_flow_20260818.pdf",
+                "netPayableAmount": 118000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2028-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 200000,
+                "status": 3
+            },
+            "landOwners": [
+                {
+                    "name": "SK Landlord",
+                    "phone": "9000011111",
+                    "bankName": "Axis Bank",
+                    "ifsc": "UTIB0001234",
+                    "accountNumber": "917020012345",
+                    "panNumber": "FXYPS1122P",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 100000,
+                    "onlineAmount": 100000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 10000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 18000,
+                    "gstNumber": "33SKGST1234Z1"
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-SK-01",
+                    "mediaName": "SK Site 1",
+                    "location": "Chennai Zone 1",
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-sk-1/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-sk-1/photo2.jpg"
+                    ]
+                },
+                {
+                    "mediaCode": "MED-SK-02",
+                    "mediaName": "SK Site 2",
+                    "location": "Chennai Zone 2",
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-sk-2/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-sk-2/photo2.jpg"
+                    ]
+                }
+            ]
+        }
+    },
+    "Single Landlord / Multiple Sites / Single Bill / Separate Agreement Scenario": {
+        "scenario": "Separate Agreement Scenario",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "numberOfLandOwners": 1,
+            "landOwners": [
+                {
+                    "name": "P. Vasanthakumar",
+                    "phone": "9944556677",
+                    "bankName": "Indian Bank",
+                    "ifsc": "IDIB000M123",
+                    "accountNumber": "667788990011",
+                    "panNumber": "EXYPV7890N",
+                    "paymentCategory": 2,
+                    "onlineMode": 2,
+                    "shareAmount": 100000,
+                    "onlineAmount": 100000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 0,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 1,
+                    "gstAmount": 10800,
+                    "gstNumber": "123456"
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-6001",
+                    "mediaName": "Site A",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "netPayableAmount": 50000,
+                        "paymentFrequency": 1,
+                        "gstInvoiceUrl": "https://adinn-space.sgp1.cdn.digitaloceanspaces.com/Rental-OOH/invoice/1789559358930-Site_Ledger_-_ledger_flow_20260818.pdf",
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "agreement": {
+                        "startDate": "2025-01-01",
+                        "endDate": "2026-12-31",
+                        "advanceRent": 200000,
+                        "status": 3
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": []
+                },
+                {
+                    "mediaCode": "MED-6002",
+                    "mediaName": "Site B",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "netPayableAmount": 50000,
+                        "paymentFrequency": 1,
+                        "gstInvoiceUrl": "https://adinn-space.sgp1.cdn.digitaloceanspaces.com/Rental-OOH/invoice/1789559358930-Site_Ledger_-_ledger_flow_20260818.pdf",
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "agreement": {
+                        "startDate": "2027-06-01",
+                        "endDate": "2028-05-31",
+                        "advanceRent": 200000,
+                        "status": 3
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": []
+                }
+            ]
+        }
+    },
+    "Multiple Landlords / Multiple Sites / Single Bill / Separate Agreement": {
+        "scenario": "Multiple Landlords / Multiple Sites / Single Bill / Separate Agreement",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "separate_agreement",
+            "numberOfLandOwners": 2,
+            "landOwners": [
+                {
+                    "name": "C. Dhanasekaran",
+                    "phone": "9833344455",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "123456789012",
+                    "panNumber": "IXYPD7788S",
+                    "paymentCategory": 1,
+                    "onlineMode": 0,
+                    "shareAmount": 50000,
+                    "onlineAmount": 0,
+                    "cashAmount": 50000,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                },
+                {
+                    "name": "D. Kalaivani",
+                    "phone": "9844455566",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "223456789013",
+                    "panNumber": "JXYPK8899T",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 50000,
+                    "onlineAmount": 50000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 5000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-7001",
+                    "mediaName": "Perungudi Site",
+                    "location": "Perungudi, Chennai",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "netPayableAmount": 50000,
+                        "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "agreement": {
+                        "startDate": "2025-01-01",
+                        "endDate": "2027-12-31",
+                        "reminderBeforeExpiry": 30,
+                        "advanceRent": 100000,
+                        "status": 3
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-7001/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-7001/photo2.jpg"
+                    ]
+                },
+                {
+                    "mediaCode": "MED-7002",
+                    "mediaName": "Thoraipakkam Site",
+                    "location": "Thoraipakkam, Chennai",
+                    "rentalPayment": {
+                        "totalRentalAmount": 50000,
+                        "netPayableAmount": 50000,
+                        "paymentFrequency": 1,
+                        "lastBillPaidDate": "2026-08-01",
+                        "currentBillPaidDate": "2026-09-01",
+                        "nextBillingDate": "2026-10-01"
+                    },
+                    "agreement": {
+                        "startDate": "2025-06-01",
+                        "endDate": "2028-05-31",
+                        "reminderBeforeExpiry": 30,
+                        "advanceRent": 100000,
+                        "status": 3
+                    },
+                    "appraisal": [],
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-7002/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-7002/photo2.jpg"
+                    ]
+                }
+            ]
+        }
+    },
+    "Multiple Landlords / Multiple Sites / Single Bill / Single Agreement": {
+        "scenario": "Multiple Landlords / Multiple Sites / Single Bill / Single Agreement",
+        "mailtype": "cmdapproval",
+        "to": [
+            "srfsdev@adinn.co.in"
+        ],
+        "cc": [
+            "srbedev@adinn.co.in"
+        ],
+        "data": {
+            "billingType": "single_bill",
+            "agreementType": "single_agreement",
+            "numberOfLandOwners": 2,
+            "rentalPayment": {
+                "totalRentalAmount": 100000,
+                "gstApplicable": 0,
+                "gstAmount": 0,
+                "gstNumber": "",
+                "netPayableAmount": 100000,
+                "paymentFrequency": 1,
+                "lastBillPaidDate": "2026-08-01",
+                "currentBillPaidDate": "2026-09-01",
+                "nextBillingDate": "2026-10-01"
+            },
+            "agreement": {
+                "startDate": "2025-01-01",
+                "endDate": "2028-12-31",
+                "reminderBeforeExpiry": 30,
+                "advanceRent": 200000,
+                "status": 3
+            },
+             "appraisal": {
+            "applicable": 1,
+            "type": 2,
+            "fixedAmount": 5000,
+            "appraisalAmount": 5000,
+            "frequency": 1,
+            "lastAppraisalDate": "2025-01-01",
+            "nextAppraisalDate": "2026-01-01",
+            "includedInCurrentRent": 1
+        },
+            "landOwners": [
+                {
+                    "name": "C. Dhanasekaran",
+                    "phone": "9833344455",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "123456789012",
+                    "panNumber": "IXYPD7788S",
+                    "paymentCategory": 1,
+                    "onlineMode": 0,
+                    "shareAmount": 50000,
+                    "onlineAmount": 0,
+                    "cashAmount": 50000,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 0,
+                    "tdsAmount": 0,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                },
+                {
+                    "name": "D. Kalaivani",
+                    "phone": "9844455566",
+                    "bankName": "IOB",
+                    "ifsc": "IOBA0001234",
+                    "accountNumber": "223456789013",
+                    "panNumber": "JXYPK8899T",
+                    "paymentCategory": 2,
+                    "onlineMode": 1,
+                    "shareAmount": 50000,
+                    "onlineAmount": 50000,
+                    "cashAmount": 0,
+                    "tdsPercentage": 10,
+                    "tdsApplicable": 1,
+                    "tdsAmount": 5000,
+                    "gstHold": 0,
+                    "tdsHold": 0,
+                    "gstApplicable": 0,
+                    "gstAmount": 0,
+                    "gstNumber": ""
+                }
+            ],
+            "sites": [
+                {
+                    "mediaCode": "MED-8001",
+                    "mediaName": "Perungudi Main Site",
+                    "location": "Perungudi, Chennai",
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-8001/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-8001/photo2.jpg"
+                    ]
+                },
+                {
+                    "mediaCode": "MED-8002",
+                    "mediaName": "Thoraipakkam Main Site",
+                    "location": "Thoraipakkam, Chennai",
+                    "proof_of_campaign": [
+                        "https://cdn.adinndigital.com/proof/med-8002/photo1.jpg",
+                        "https://cdn.adinndigital.com/proof/med-8002/photo2.jpg"
+                    ]
+                }
+            ]
+        }
+    }
+}

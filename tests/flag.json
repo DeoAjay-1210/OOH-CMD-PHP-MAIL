@@ -1,0 +1,137 @@
+{
+  "_readme": "Reference for every coded/flag field used in the CMD approval payload (see tests/payloads.json for full examples). Values here must stay in sync with the enum maps at the top of cmdApprovalHelpers.php — if that file changes, update this file too.",
+
+  "data.rentalPayment.gstApplicable": {
+    "description": "Whether GST applies to this bill's rent.",
+    "values": {
+      "0": "No - GST does not apply to this bill",
+      "1": "Yes - GST applies; rentalPayment.gstAmount, gstNumber and gstInvoiceUrl become required"
+    }
+  },
+
+  "data.rentalPayment.gstInvoiceUrl": {
+    "description": "Not a coded flag, but a required field whenever gstApplicable = 1 - the live URL of the GST invoice PDF. Leave empty only when gstApplicable = 0.",
+    "values": {
+      "\"\" (empty string)": "No invoice attached - only valid when gstApplicable = 0",
+      "\"https://...\"": "Live URL to the GST invoice PDF - attached to the CMD approval mail"
+    }
+  },
+
+  "data.rentalPayment.paymentFrequency": {
+    "description": "How often rent is billed for this site.",
+    "values": {
+      "1": "Monthly",
+      "2": "2 Months",
+      "3": "3 Months",
+      "4": "6 Months",
+      "5": "1 Year",
+      "6": "2 Years",
+      "7": "Custom"
+    }
+  },
+
+  "data.status": {
+    "description": "Media/site status.",
+    "values": {
+      "1": "Active",
+      "2": "Inactive"
+    }
+  },
+
+  "data.agreement.status": {
+    "description": "Agreement lifecycle status.",
+    "values": {
+      "1": "Draft",
+      "2": "Pending Approval",
+      "3": "Active",
+      "4": "Expired",
+      "5": "Expiring Soon"
+    }
+  },
+
+  "data.appraisal.applicable": {
+    "description": "Whether a rent appraisal (revision) applies to this bill. Can be omitted entirely when there is no appraisal at all - an empty/missing appraisal object is treated the same as 0.",
+    "values": {
+      "0": "No - no appraisal for this bill",
+      "1": "Yes - appraisal applies; see appraisal.type below"
+    }
+  },
+
+  "data.appraisal.type": {
+    "description": "How the appraisal amount is calculated. Only read when appraisal.applicable = 1.",
+    "values": {
+      "1": "Percentage - appraisal.percentage is a % of base rent, appraisal.appraisalAmount is the resulting ₹ amount",
+      "2": "Fixed Amount - appraisal.fixedAmount / appraisal.appraisalAmount is a flat ₹ figure"
+    }
+  },
+
+  "data.appraisal.includedInCurrentRent": {
+    "description": "Whether the appraisal amount has ALREADY been folded into rentalPayment.totalRentalAmount by the backend (e.g. rent was revised last cycle). Prevents double-counting the appraisal on top of the base rent.",
+    "values": {
+      "0": "No - appraisal.appraisalAmount is a NEW add-on and gets added on top of the base rent in the email",
+      "1": "Yes - base rent already reflects the appraisal; email shows 'Appraisal already included in current rent' instead of adding it again"
+    }
+  },
+
+  "data.appraisal.frequency": {
+    "description": "How often the appraisal (rent revision) recurs.",
+    "values": {
+      "1": "1 Year",
+      "2": "2 Years",
+      "3": "3 Years",
+      "4": "Custom"
+    }
+  },
+
+  "data.landOwners[].paymentCategory": {
+    "description": "How this landlord/owner is paid.",
+    "values": {
+      "1": "Cash",
+      "2": "Online",
+      "3": "Cash + Online"
+    }
+  },
+
+  "data.landOwners[].onlineMode": {
+    "description": "Mode used for the ONLINE portion of payment. Only relevant when paymentCategory is 2 (Online) or 3 (Cash + Online); leave 0/empty for cash-only owners (shown as '-' in the email).",
+    "values": {
+      "0 / empty": "Not applicable - cash-only owner",
+      "1": "Bank Transfer",
+      "2": "UPI",
+      "3": "Cheque"
+    }
+  },
+
+  "data.landOwners[].gstHold": {
+    "description": "Whether GST is being WITHHELD from this remittance (money stays with the company for now). Does NOT reduce the CMD-approved amount - the full rent+GST is still shown as payable, just flagged 'ON HOLD'. Only meaningful for a single landlord (GST is never payable across multiple landlords).",
+    "values": {
+      "0": "No - GST is being remitted normally",
+      "1": "Yes - GST amount is on hold; email shows the GST row struck-through with an 'ON HOLD' badge"
+    }
+  },
+
+  "data.landOwners[].tdsHold": {
+    "description": "Whether this owner's TDS deduction is being held back rather than deducted now. Independent of whether TDS actually applies (see the ₹50,000 online-amount rule below) - only shown when TDS is also applicable.",
+    "values": {
+      "0": "No - TDS is deducted normally when applicable",
+      "1": "Yes - TDS is on hold for this owner; shown struck-through with an 'ON HOLD' badge / listed in the multi-landlord TDS-hold notes"
+    }
+  },
+
+  "data.billingType": {
+    "description": "How multiple sites under one landlord should be billed. Only relevant when data.sites[] is used (multi-site payloads); ignored/defaults to single_bill for legacy single-site payloads.",
+    "values": {
+      "single_bill (or omitted)": "One consolidated CMD approval email covering all sites in data.sites[]",
+      "separate_bill": "One CMD approval email PER SITE - only actually splits into per-site emails when there is exactly 1 landlord; with multiple landlords it still consolidates into one email"
+    }
+  },
+
+  "_computed_fields_not_sent_by_caller": {
+    "_note": "These are NOT input flags - they are computed by cmdApprovalHelpers.php from the raw numbers above and only appear in the OUTGOING email payload for reference. You do not set these yourself.",
+
+    "is_tds_applicable / tds_applicable": "TDS applies automatically once a landlord's ONLINE amount (data.landOwners[].onlineAmount) is >= 50000, at tdsPercentage% - this is a computed rule, there is no raw 'tdsApplicable' input flag to set.",
+    "is_gst_applicable / gst_applicable": "True only when gstApplicable = 1 AND there is exactly 1 landlord (GST is never shown/payable for multiple landlords) AND the computed GST amount is > 0.",
+    "gst_invoice_attached": "True when GST is applicable and rentalPayment.gstInvoiceUrl was provided and successfully fetched.",
+    "gst_invoice_missing": "True when GST is applicable but rentalPayment.gstInvoiceUrl was empty - shown as a red 'Missing' flag in the email since the invoice is mandatory whenever GST applies."
+  }
+}

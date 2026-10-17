@@ -1340,6 +1340,17 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
                     <td class="detail-label" style="width:48%; padding:9px 11px; border-bottom:1px solid #eee5e6; background:#fffafa; color:#5b5b61; font-size:11px; font-weight:700; text-align:left;">Payment Category</td>
                     <td class="detail-value" style="padding:9px 11px; border-bottom:1px solid #eee5e6; color:#26262a; font-size:11px; font-weight:600; text-align:left;"><?= htmlspecialchars($owner['payment_category'] ?? '') ?></td>
                   </tr>
+                  <?php // Single landlord has no Payment Breakdown column, so show the Cash + Online split here ?>
+                  <?php if (!$is_multiple_landowners && ($owner['payment_category'] ?? '') === 'Cash + Online'): ?>
+                  <tr>
+                    <td class="detail-label" style="width:48%; padding:9px 11px; border-bottom:1px solid #eee5e6; background:#fffafa; color:#5b5b61; font-size:11px; font-weight:700; text-align:left;">Online Amount</td>
+                    <td class="detail-value" style="padding:9px 11px; border-bottom:1px solid #eee5e6; color:#26262a; font-size:11px; font-weight:600; text-align:left;">₹ <?= htmlspecialchars($owner['online_amount'] ?? '0') ?></td>
+                  </tr>
+                  <tr>
+                    <td class="detail-label" style="width:48%; padding:9px 11px; border-bottom:1px solid #eee5e6; background:#fffafa; color:#5b5b61; font-size:11px; font-weight:700; text-align:left;">Cash Amount</td>
+                    <td class="detail-value" style="padding:9px 11px; border-bottom:1px solid #eee5e6; color:#26262a; font-size:11px; font-weight:600; text-align:left;">₹ <?= htmlspecialchars($owner['cash_amount'] ?? '0') ?></td>
+                  </tr>
+                  <?php endif; ?>
                   <?php
                   $ownerGstAmtRaw = (float)str_replace([',', '₹', ' '], '', $owner['gst_amount'] ?? '0');
                   $ownerGstNumVal = trim((string)($owner['gst_number'] ?? ''));

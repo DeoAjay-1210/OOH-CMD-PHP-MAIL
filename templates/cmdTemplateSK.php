@@ -1510,9 +1510,9 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
       </table>
     </div>
     <?php endif; ?>
-    <p class="closing-copy" style="margin:4px 0 18px 0; color:#55555b; font-size:12px; line-height:1.6;">
+    <!-- <p class="closing-copy" style="margin:4px 0 18px 0; color:#55555b; font-size:12px; line-height:1.6;">
       Please review the details and provide your approval at the earliest convenience.
-    </p>
+    </p> -->
 
   </div>
 
@@ -1521,7 +1521,7 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
     <tr>
       <td style="padding:18px 28px; border:0; background:#f3f4f5; color:#56565c; font-size:10px; line-height:1.55; vertical-align:middle;">
         This is an automated email from ADINN Rental Management System.<br>
-        Please review the details and provide your approval.
+        Kindly review and verify the details.
       </td>
       <td class="footer-brand" style="padding:18px 28px; border:0; background:#f3f4f5; color:#2f2f34; font-size:10px; line-height:1.55; vertical-align:middle; text-align:right; white-space:nowrap; font-weight:700;">
         © <?= date('Y') ?> Adinn Advertising Services Ltd. All Rights Reserved.

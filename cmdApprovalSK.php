@@ -93,6 +93,10 @@ function buildCmdSubject(array $landOwnersRaw, string $mediaCode): string {
  * Reused by both HTTP API calls and automated CLI test runners.
  */
 function processCmdApprovalRequest(array $data): array {
+    // ✅ NEW — bill approval cancelled: a reply to the CMD approval mail
+    if (($data['mailtype'] ?? '') === 'cmdapprovalcancel') {
+        return processCmdCancelRequest($data);
+    }
     if (empty($data['mailtype']) || $data['mailtype'] !== 'cmdapproval') {
         throw new InvalidArgumentException("mailtype must be 'cmdapproval'");
     }
@@ -182,6 +186,38 @@ function processCmdApprovalRequest(array $data): array {
     sendCmdMail($built['payload'], $subject, $toAddresses, $ccAddresses, $built['proof_urls'], $built['invoice_urls'], $templatePath);
 
     return ["status" => "success", "message" => "Mail sent successfully", "mailCount" => 1];
+}
+
+// ─────────────────────────────────────────
+// ✅ NEW — "cmdapprovalcancel": the CMD approved bill's approval was cancelled.
+// Sent as a reply to the CMD approval mail (data.subject = "Re: CMD Payment
+// Approved - …", same subject → same mail thread). Body: the cancel message +
+// data.reason only. No attachments.
+// ─────────────────────────────────────────
+function processCmdCancelRequest(array $data): array {
+    if (empty($data['to'])) {
+        throw new InvalidArgumentException("'to' address is required");
+    }
+    $media = (isset($data['data']) && is_array($data['data'])) ? $data['data'] : [];
+    $subject = trim((string)($media['subject'] ?? ''));
+    if ($subject === '') {
+        throw new InvalidArgumentException("'data.subject' is required");
+    }
+
+    $toAddresses = $data['to'] ?? [];
+    $ccAddresses = $data['cc'] ?? [];
+    if (is_string($toAddresses)) $toAddresses = [$toAddresses];
+    if (is_string($ccAddresses)) $ccAddresses = [$ccAddresses];
+
+    $templatePath = __DIR__ . '/templates/cmdCancelTemplate.php';
+    if (!file_exists($templatePath)) {
+        throw new RuntimeException("Cancel template file not found");
+    }
+
+    $payload = ['reason' => trim((string)($media['reason'] ?? ''))];
+    sendCmdMail($payload, $subject, $toAddresses, $ccAddresses, [], [], $templatePath);
+
+    return ["status" => "success", "message" => "Cancel mail sent successfully", "mailCount" => 1];
 }
 
 // ─────────────────────────────────────────

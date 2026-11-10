@@ -214,7 +214,20 @@ function processCmdCancelRequest(array $data): array {
         throw new RuntimeException("Cancel template file not found");
     }
 
-    $payload = ['reason' => trim((string)($media['reason'] ?? ''))];
+    // ✅ CHANGED — + bill no / month / media / amount / cancelled by
+    $str = function ($k) use ($media) { return trim((string)($media[$k] ?? '')); };
+    $payload = [
+        'reason'                 => $str('reason'),
+        'bill_no'                => $str('billNo'),
+        'month'                  => $str('month'),
+        'media_code'             => $str('mediaCode'),
+        'media_name'             => $str('mediaName'),
+        'amount'                 => (float)($media['amount'] ?? 0),
+        'gst_amount'             => (float)($media['gstAmount'] ?? 0),
+        'cancelled_by'           => $str('cancelledBy'),
+        'cancelled_by_role_name' => $str('cancelledByRoleName'),
+        'cancelled_at'           => $str('cancelledAt'),
+    ];
     sendCmdMail($payload, $subject, $toAddresses, $ccAddresses, [], [], $templatePath);
 
     return ["status" => "success", "message" => "Cancel mail sent successfully", "mailCount" => 1];

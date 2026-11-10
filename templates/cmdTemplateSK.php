@@ -18,6 +18,7 @@
 $payload = $payload ?? [];
 
 // MEDIA DETAILS
+$bill_no           = $payload['bill_no']           ?? ''; // ✅ NEW
 $media_code        = $payload['media_code']        ?? '';
 $media_name        = $payload['media_name']        ?? '';
 $media_type        = $payload['media_type']        ?? '';
@@ -873,6 +874,9 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
       <div class="section-heading" style="padding:13px 16px; border-bottom:1px solid #eadfe0; background:#ffffff; color:#df1128; font-size:14px; line-height:1.2; font-weight:800; letter-spacing:0.35px; text-transform:uppercase;">
         <span class="heading-badge" style="display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; border-radius:8px; background:#e2182d; color:#ffffff; text-align:center; font-size:11px; font-weight:800; vertical-align:middle;">SB</span>
         Site-wise Bill Breakdown
+        <?php if ($bill_no !== ''): ?>
+        <span class="bill-no" style="float:right; margin-top:6px; color:#17171a; font-size:12px; font-weight:700; letter-spacing:0; text-transform:none;">Bill No: <span class="no-auto-link" style="color:#df1128;"><?= htmlspecialchars($bill_no) ?></span></span>
+        <?php endif; ?>
       </div>
 
       <div class="table-wrap" style="width:100%; overflow-x:auto;">
@@ -973,6 +977,9 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
       <div class="section-heading" style="padding:13px 16px; border-bottom:1px solid #eadfe0; background:#ffffff; color:#df1128; font-size:14px; line-height:1.2; font-weight:800; letter-spacing:0.35px; text-transform:uppercase;">
         <span class="heading-badge" style="display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; border-radius:8px; background:#e2182d; color:#ffffff; text-align:center; font-size:11px; font-weight:800; vertical-align:middle;">MI</span>
         Media Information
+        <?php if ($bill_no !== ''): ?>
+        <span class="bill-no" style="float:right; margin-top:6px; color:#17171a; font-size:12px; font-weight:700; letter-spacing:0; text-transform:none;">Bill No: <span class="no-auto-link" style="color:#df1128;"><?= htmlspecialchars($bill_no) ?></span></span>
+        <?php endif; ?>
       </div>
 
       <table class="media-grid" role="presentation" style="width:100%; border-collapse:collapse; table-layout:fixed;">

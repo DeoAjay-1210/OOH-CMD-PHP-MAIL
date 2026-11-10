@@ -419,6 +419,7 @@ function buildSingleMediaPayload(array $media) {
         'gst_invoice_missing'       => $gstInvoice['missing'],
 
         // MEDIA DETAILS
+        'bill_no'           => trim((string)($media['billNo'] ?? '')), // ✅ NEW — bill number
         'media_code'        => $media['mediaCode']          ?? '',
         'media_name'        => $media['mediaName']          ?? '',
         'media_type'        => $media['mediaType']          ?? '',
@@ -743,6 +744,7 @@ function buildMultiSitePayload(array $sites, array $topLandOwners, array $topMed
         'gst_invoice_missing_any'       => $anyGstInvoiceMissing,
 
         // Media & Agreement Details for multi-site
+        'bill_no'            => trim((string)($topMedia['billNo'] ?? '')), // ✅ NEW — bill number(s)
         'media_code'         => 'Multi-Site (' . count($sites) . ' Sites)',
         'media_name'         => $topMedia['mediaName'] ?? 'Consolidated Multi-Site Media',
         'media_type'         => $topMedia['mediaType'] ?? 'Multiple',

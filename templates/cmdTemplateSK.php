@@ -102,6 +102,7 @@ $is_tds_hold             = $payload['is_tds_hold']             ?? false;
 $multi_tds_hold_notes    = $payload['multi_tds_hold_notes']    ?? [];
 $multi_tds_deducted_rows = $payload['multi_tds_deducted_rows'] ?? [];
 $has_notes               = $payload['has_notes']               ?? true;
+$revision_notes          = $payload['revision_notes']          ?? []; // ✅ NEW — rent revision notes
 
 // MULTI-SITE CONSOLIDATED BILL (billingType-driven — see cmdApprovalSK.php).
 // false for the legacy single-site flow; section below is unchanged for that case.
@@ -971,6 +972,15 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
         </tr>
       </table>
     </div>
+    <!-- ✅ NEW — rent revision notes (multi-site mail; only when sent) -->
+    <?php if (!empty($revision_notes)): ?>
+    <div class="notes-box" style="margin:0 0 18px 0; padding:13px 15px; border:1px solid #f0d6da; border-left:4px solid #e2182d; border-radius:8px; background:#fff8f8;">
+      <div class="notes-title" style="margin:0 0 6px 0; color:#202024; font-size:12px; line-height:1.3; font-weight:800;">Notes</div>
+      <?php foreach ($revision_notes as $revisionNote): ?>
+      <p class="notes-copy" style="margin:0 0 4px 0; color:#55555b; font-size:11px; line-height:1.6;"><?= htmlspecialchars($revisionNote) ?></p>
+      <?php endforeach; ?>
+    </div>
+    <?php endif; ?>
     <?php else: ?>
     <!-- MEDIA INFORMATION FIRST -->
     <div class="section-card" style="width:100%; margin:0 0 18px 0; border:1px solid #eadfe0; border-radius:12px; overflow:hidden; background:#ffffff;">
@@ -1249,6 +1259,11 @@ $TABLE_CELL  = 'border:1px solid #eadfe0; background:#ffffff; color:#2d2d31; fon
         <p class="notes-copy notes-hold" style="margin:0 0 4px 0; color:#b32032; font-size:11px; line-height:1.6; font-weight:800;"><?= htmlspecialchars($tdsHoldNote) ?></p>
         <?php endforeach; ?>
       <?php endif; ?>
+
+      <!-- ✅ NEW — rent revision notes (Advance / increase / decrease) -->
+      <?php foreach ($revision_notes as $revisionNote): ?>
+      <p class="notes-copy" style="margin:0 0 4px 0; color:#55555b; font-size:11px; line-height:1.6;"><?= htmlspecialchars($revisionNote) ?></p>
+      <?php endforeach; ?>
     </div>
     <?php endif; ?>
 

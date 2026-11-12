@@ -371,6 +371,11 @@ function buildSingleMediaPayload(array $media) {
         || (!$isMultipleLandowners && $isTdsApplicable && $isTdsHold)
         || ($isMultipleLandowners && !empty($multiTdsHoldNotes));
 
+    // ✅ NEW — rent revision notes from the backend (data.notes): Advance deducted,
+    // rent increased / decreased. Shown in the Notes box; none → unchanged.
+    $revisionNotes = array_values(array_filter(array_map('strval', (array)($media['notes'] ?? []))));
+    if (!empty($revisionNotes)) $hasNotes = true;
+
     $payload = [
         // RENTAL PAYMENT SUMMARY (new table, shown above Media Details)
         'rp_total_rental'           => fmtAmount($rentalPayment['totalRentalAmount']        ?? 0),
@@ -464,6 +469,7 @@ function buildSingleMediaPayload(array $media) {
         'multi_tds_hold_notes'    => $multiTdsHoldNotes,
         'multi_tds_deducted_rows' => $multiTdsDeductedRows,
         'has_notes'               => $hasNotes,
+        'revision_notes'          => $revisionNotes, // ✅ NEW
 
         // TOTAL
         'grand_total'       => $grand_total,
@@ -781,6 +787,8 @@ function buildMultiSitePayload(array $sites, array $topLandOwners, array $topMed
         'multi_tds_hold_notes'    => $owners['multi_tds_hold_notes'],
         'multi_tds_deducted_rows' => $owners['multi_tds_deducted_rows'],
         'has_notes'               => !empty($owners['multi_tds_hold_notes']) || $anyGstInvoiceMissing || $owners['is_gst_hold'],
+        // ✅ NEW — rent revision notes (data.notes), own box in the multi-site mail
+        'revision_notes'          => array_values(array_filter(array_map('strval', (array)($topMedia['notes'] ?? [])))),
     ];
 
     return ['payload' => $payload, 'proof_urls' => $proofUrls, 'invoice_urls' => $invoiceUrls];

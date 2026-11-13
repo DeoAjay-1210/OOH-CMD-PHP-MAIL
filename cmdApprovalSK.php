@@ -69,6 +69,18 @@ function sendCmdMail($payload, $subject, $toAddresses, $ccAddresses, $proofUrls,
     }
 
     $mail->Subject = $subject;
+    // ✅ NEW — same thread: every mail of the same subject ("Re: " ignored, so the
+    // cancel reply too) refers to one fixed thread id → Gmail / Outlook keep them in
+    // one conversation. Message-ID itself stays unique per mail.
+    $threadSubject = trim((string)$subject);
+    while (preg_match('/^(re|fw|fwd)\s*:\s*/i', $threadSubject)) {
+        $threadSubject = trim(preg_replace('/^(re|fw|fwd)\s*:\s*/i', '', $threadSubject));
+    }
+    if ($threadSubject !== '') {
+        $threadId = '<cmd-thread-' . md5(strtolower($threadSubject)) . '@adinndigital.com>';
+        $mail->addCustomHeader('In-Reply-To', $threadId);
+        $mail->addCustomHeader('References', $threadId);
+    }
     $mail->Body    = $body;
     $mail->send();
 }
